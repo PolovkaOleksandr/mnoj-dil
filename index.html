@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            
+        }
+        .res{
+            width: 20px;
+            height: 13px;
+        }
+        .odiv{
+            height: 150px;
+            margin-top: 0px;
+        }
+        p{
+            height: 10px;
+            margin-top: 7px;
+            margin-bottom: 0px;
+        }
+        .one::before{
+            display: block;
+            width: 25%;
+            margin-left: 10px;
+            content: "x";
+        }
+        .one{
+            width: 20px;
+            margin-bottom: 25px;
+            height: 20px;
+        }
+        .two::after{
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: black;
+            content: "";
+        }
+        .two{
+            margin-bottom: 25px;
+            width: 20px;
+            height: 20px;
+        }
+        body{
+            padding: 50px;
+        }
+        .inp{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button class="gen">Генерувати</button>
+    <button class="per">Перевірити</button>
+     <div class="flex odiv">
+     <div class="flex">
+        <p class="one"></p>
+        
+    </div>
+    <p class="two"></p>
+    
+    <input class="inp" type="text">
+</div>
+
+    
+    <p class="res"></p>
+    
+
+     <script src="./index.js"></script>
+</body>
+</html>
